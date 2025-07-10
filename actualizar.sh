@@ -2,7 +2,7 @@
 
 hotspot_superior=$(awk "NR==131" /home/pi/status.ini)
 if [ "$hotspot_superior" = 'HOTSPOT' ];then
-/home/pi/A108/qt/./qt_hotspot_unicosudo
+/home/pi/A108/qt/./qt_hotspot_unico
 else
 /home/pi/A108/qt/./qt_menu_superior 
 fi
