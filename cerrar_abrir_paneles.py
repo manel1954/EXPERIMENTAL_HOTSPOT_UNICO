@@ -109,12 +109,12 @@ def get_tooltip_text():
 
 root = tk.Tk()
 root.overrideredirect(True)
-root.geometry("200x30+1200+61")  # Fijar ventana en esquina superior izquierda
+root.geometry("200x30+1080+61")  # Fijar ventana en esquina superior izquierda
 root.attributes("-topmost", True)
 root.attributes("-alpha", 0.8)
 root.configure(bg='black')
 
-btn = tk.Label(root, text="-", font=("Arial", 12), fg="black", bg="orange", width=2, height=1, cursor="hand2")
+btn = tk.Label(root, text="hotspot_unico", font=("Arial", 12), fg="black", bg="orange", width=2, height=1, cursor="hand2")
 btn.pack(expand=True, fill="both")
 
 btn.bind("<ButtonPress-1>", on_left_button_press)
