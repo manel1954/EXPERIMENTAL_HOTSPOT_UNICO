@@ -32,7 +32,7 @@ else
 echo "no hace nada"  
 fi
 
-# path usuario
+# path usuario 
 usuario="/home/pi"
 usuario="$usuario"
 fecha_imagen=$(awk "NR==1" /home/pi/version-fecha-actualizacion)
