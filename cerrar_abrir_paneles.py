@@ -98,18 +98,18 @@ def on_left_button_release(event):
         current_text = btn['text']
         if current_text == 'hotspot_unico':
             cerrar_qt()
-            btn.config(text='panel superior')
+            btn.config(text='panel_superior')
         else:
             iniciar_qt()
             btn.config(text='hotspot_unico')
     # Ya no se guarda la posición
 
 def get_tooltip_text():
-    return "CERRAR PANELES" if btn['text'] == '-' else "ABRIR PANELES"
+    return "CERRAR PANELES" if btn['text'] == 'panel_superior' else "ABRIR PANELES"
 
 root = tk.Tk()
 root.overrideredirect(True)
-root.geometry("200x30+1247+61")  # Fijar ventana en esquina superior izquierda
+root.geometry("200x30+1200+61")  # Fijar ventana en esquina superior izquierda
 root.attributes("-topmost", True)
 root.attributes("-alpha", 0.8)
 root.configure(bg='black')
