@@ -64,7 +64,7 @@ def cerrar_qt():
 
 def iniciar_qt():
     try:
-        subprocess.Popen(['/home/pi/A108/qt/./qt_menu_superior'])
+        subprocess.Popen(['/home/pi/A108/qt/./qt_hotspot_unico'])
     except Exception as e:
         print(f"Error al iniciar qt_menu_superior: {e}")
 
@@ -96,12 +96,12 @@ def on_left_button_motion(event):
 def on_left_button_release(event):
     if not dragging:
         current_text = btn['text']
-        if current_text == '-':
+        if current_text == 'hotspot_unico':
             cerrar_qt()
             btn.config(text='+')
         else:
             iniciar_qt()
-            btn.config(text='-')
+            btn.config(text='hotspot_unico')
     # Ya no se guarda la posición
 
 def get_tooltip_text():
