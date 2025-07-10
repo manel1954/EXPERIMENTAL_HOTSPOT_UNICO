@@ -98,7 +98,7 @@ def on_left_button_release(event):
         current_text = btn['text']
         if current_text == 'hotspot_unico':
             cerrar_qt()
-            btn.config(text='+')
+            btn.config(text='panel superior')
         else:
             iniciar_qt()
             btn.config(text='hotspot_unico')
@@ -109,7 +109,7 @@ def get_tooltip_text():
 
 root = tk.Tk()
 root.overrideredirect(True)
-root.geometry("20x20+1247+61")  # Fijar ventana en esquina superior izquierda
+root.geometry("200x30+1247+61")  # Fijar ventana en esquina superior izquierda
 root.attributes("-topmost", True)
 root.attributes("-alpha", 0.8)
 root.configure(bg='black')
