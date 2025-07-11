@@ -7,7 +7,8 @@ else
 /home/pi/A108/qt/./qt_menu_superior 
 fi
 sleep 3
-/home/pi/A108/qt/./qt_menu_inferior
+cd /home/pi/A108/qt/
+./qt_menu_inferior
 sleep 3
 /home/pi/A108/qt/./qt_boton_hotspot_unico
 slepp 3
