@@ -6,10 +6,11 @@ if [ "$hotspot_superior" = 'HOTSPOT' ];then
 else
 /home/pi/A108/qt/./qt_menu_superior 
 fi
-
+sleep 3
 /home/pi/A108/qt/./qt_menu_inferior
+sleep 3
 /home/pi/A108/qt/./qt_boton_hotspot_unico
-
+slepp 3
 sudo systemctl disable ysfgateway.service
 sudo systemctl disable dmr2ysf.service
 sudo systemctl disable analog_bridge.service
