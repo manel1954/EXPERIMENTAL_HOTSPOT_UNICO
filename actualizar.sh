@@ -8,7 +8,7 @@ else
 fi
 
 /home/pi/A108/qt/./qt_menu_inferior
-/home/pi/A108/qt/./qt_boton_hotspot
+/home/pi/A108/qt/./qt_boton_hotspot_unico
 
 sudo systemctl disable ysfgateway.service
 sudo systemctl disable dmr2ysf.service
