@@ -1,11 +1,11 @@
 ﻿#!/bin/bash
 
-hotspot_superior=$(awk "NR==131" /home/pi/status.ini)
-if [ "$hotspot_superior" = 'HOTSPOT' ];then
-/home/pi/A108/qt/./qt_hotspot_unico
-else
-sudo /home/pi/A108/qt/./qt_menu_superior 
-fi
+#hotspot_superior=$(awk "NR==131" /home/pi/status.ini)
+#if [ "$hotspot_superior" = 'HOTSPOT' ];then
+#/home/pi/A108/qt/./qt_hotspot_unico
+#else
+#sudo /home/pi/A108/qt/./qt_menu_superior 
+#fi
 
 sudo systemctl disable ysfgateway.service
 sudo systemctl disable dmr2ysf.service
