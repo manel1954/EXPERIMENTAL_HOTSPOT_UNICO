@@ -1,5 +1,12 @@
 ﻿#!/bin/bash
 
+#hotspot_superior=$(awk "NR==131" /home/pi/status.ini)
+#if [ "$hotspot_superior" = 'HOTSPOT' ];then
+#/home/pi/A108/qt/./qt_hotspot_unico
+#else
+#sudo /home/pi/A108/qt/./qt_menu_superior 
+#fi
+
 sudo systemctl disable ysfgateway.service
 sudo systemctl disable dmr2ysf.service
 sudo systemctl disable analog_bridge.service
@@ -25,14 +32,14 @@ else
 echo "no hace nada"  
 fi
 
-# path usuario
+# path usuario 
 usuario="/home/pi"
 usuario="$usuario"
 fecha_imagen=$(awk "NR==1" /home/pi/version-fecha-actualizacion)
-nombre_imagen="PANEL"
-version=$nombre_imagen$fecha_imagen
+nombre_imagen="UNICO"
+#version=$nombre_imagen$fecha_imagen
 
-
+version="holaquetal"
 #pone todos los datos de DMR+ , Brandameiter, svxlink etc en panel_control.ini    
 bm=`sed -n '2p'  $usuario/MMDVMHost/MMDVMBM.ini`
 plus=`sed -n '2p'  $usuario/MMDVMHost/MMDVMPLUS.ini`
