@@ -12,6 +12,6 @@ sed -i "73c $puerto" /home/pi/status.ini
 
 cd /home/pi/MMDVMHost
 sleep 3
-xterm -geometry 87x24+643+219  -bg black -fg white -fa 'serift' -fs 9x -T DMR+ -e sudo ./MMDVMPLUS MMDVMPLUS.ini &
+xterm -geometry 87x24+643+213  -bg black -fg white -fa 'serift' -fs 9x -T DMR+ -e sudo ./MMDVMPLUS MMDVMPLUS.ini &
 
 
